@@ -33,25 +33,26 @@ function toggleSyle(StyleId, type) {
   }
 }
 
+
 function randomizeStyles() {
-    // Array of category types that you want to randomize
-    const categories = ['BackgroundStyle', 'ColorStyle', 'EyesStyles', 'BodyStyle', 'MouthStyle', 'HairStyle', 'AccessoriesStyle', 'HatStyle'];
-    
-    categories.forEach(function(category) {
-        // Get all elements of the current category, including the "None" option
-        const elements = document.querySelectorAll(`[id$="${category}"]`);
-        
-        // Hide all elements of the current category
-        elements.forEach(function(element) {
-            element.style.display = 'none';
-        });
-        
-        // Randomly select an element from the current category, including the "None" option
-        const randomElement = elements[Math.floor(Math.random() * elements.length)];
-        if (randomElement) {
-            randomElement.style.display = 'block';
-        }
-    });
+  // Array of category types that you want to randomize
+  const categories = ['BackgroundStyle', 'ColorStyle', 'EyesStyles', 'BodyStyle', 'MouthStyle', 'HairStyle', 'AccessoriesStyle', 'HatStyle'];
+  
+  categories.forEach(function(category) {
+      // Get all elements of the current category, including the "None" option
+      const elements = document.querySelectorAll(`[id$="${category}"]`);
+      
+      // Hide all elements of the current category
+      elements.forEach(function(element) {
+          element.style.display = 'none';
+      });
+      
+      // Randomly select an element from the current category, including the "None" option
+      const randomElement = elements[Math.floor(Math.random() * elements.length)];
+      if (randomElement) {
+          randomElement.style.display = 'block';
+      }
+  });
 }
 
 document.getElementById('DownloadImageButton').addEventListener('click', function() {
