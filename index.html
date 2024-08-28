@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+        integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>    
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">Profile generator
+        </header>
+        <div class="main">
+            <div class="images">
+                <img class = "Blank "src="Image/Blank.png" id="BlankStyle">
+                <img class = "StyleImage BackgroundStyle LightGrayBackgroundClass"src="Image/Background/Light_gray.png" id="LightGrayBackgroundStyle">
+                <img class = "StyleImage BackgroundStyle BlueBackgroundClass"src="Image/Background/BlueBackground.png" id="BlueBackgroundStyle">
+                <img class = "StyleImage ColorStyle BeigeLightColorClass"src="Image/Color/Beige-light.png" id = "BeigeLightColorStyle">
+                <img class = "StyleImage ColorStyle BeigeColorClass"src="Image/Color/Beige.png" id = "BeigeColorStyle">
+                <img class = "StyleImage ColorStyle BeigeDarkColorClass"src="Image/Color/Beige-Dark.png" id = "BeigeDarkColorStyle">
+                <img class = "StyleImage ColorStyle BrownlightColorClass"src="Image/Color/Brown-Light.png" id = "BrownLightColorStyle">
+                <img class = "StyleImage ColorStyle BrownColorClass"src="Image/Color/Brown.png" id = "BrownColorStyle">
+                <img class = "StyleImage ColorStyle BrownDarkColorClass"src="Image/Color/Brown-Dark.png" id = "BrownDarkColorStyle">
+                <img class = "StyleImage ColorStyle WhiteColorClass"src="Image/Color/White.png" id = "WhiteColorStyle">
+                <img class = "StyleImage ColorStyle GrayLightColorClass"src="Image/Color/Gray-Light.png" id = "GrayLightColorStyle">
+                <img class = "StyleImage ColorStyle GrayDarkColorClass"src="Image/Color/Gray-Dark.png" id = "GrayDarkColorStyle">
+                <img class = "StyleImage ColorStyle BlackColorClass"src="Image/Color/Black.png" id = "BlackColorStyle">
+                <img class = "StyleImage ColorStyle RedColorClass"src="Image/Color/Red.png" id = "RedColorStyle">
+                <img class = "StyleImage ColorStyle BlueColorClass"src="Image/Color/Blue.png" id = "BlueColorStyle">
+                <img class = "StyleImage ColorStyle GreenColorClass"src="Image/Color/Green.png" id = "GreenColorStyle">
+                <img class = "StyleImage ColorStyle YellowColorClass"src="Image/Color/Yellow.png" id = "YellowColorStyle">
+                <img class = "StyleImage ColorStyle GoldColorClass"src="Image/Color/Gold.png" id = "GoldColorStyle">
+                <img class = "StyleImage ColorStyle PinkColorClass"src="Image/Color/Pink.png" id = "PinkColorStyle">
+                <img class = "StyleImage EyesStyles NeutralEyesClass"src="Image/Eyes/EyesBlack.png" id = "NeutralEyesStyle"> 
+                <img class = "StyleImage EyesStyles AngryEyesClass"src="Image/Eyes/AngryEyes.png" id = "AngryEyesStyle">
+                <img class = "StyleImage EyesStyles ChillEyesClass"src="Image/Eyes/ChillEyes.png" id = "ChillEyesStyle">
+                <img class = "StyleImage EyesStyles SadEyesClass"src="Image/Eyes/SadEyes.png" id = "SadEyesStyle">
+                <img class = "StyleImage EyesStyles StarsEyesClass"src="Image/Eyes/StarsEyes.png" id = "StarsEyesStyle">
+                <img class = "StyleImage EyesStyles GlassesOneEyesClass"src="Image/Eyes/GlassesOne.png" id = "GlassesOneEyesStyle">
+                <img class = "StyleImage EyesStyles GlassesTwoEyesClass"src="Image/Eyes/GlassesTwo.png" id = "GlassesTwoEyesStyle">
+                <img class = "StyleImage EyesStyles GlassesThreeEyesClass"src="Image/Eyes/GlassesThree.png" id = "GlassesThreeEyesStyle">
+                <img class = "StyleImage EyesStyles GlassesFourEyesClass"src="Image/Eyes/GlassesFour.png" id = "GlassesFourEyesStyle">
+                <img class = "StyleImage BodyStyle SuitBodyClass"src="Image/Body/SuitBody.png" id = "SuitBodyStyle">
+                <img class = "StyleImage BodyStyle BikeBodyClass"src="Image/Body/BikeBody.png" id = "BikeBodyStyle">
+                <img class = "StyleImage MouthStyle SmilyMouthClass"src="Image/Mouth/SmilyMouth.png" id = "SmilyMouthStyle">
+                <img class = "StyleImage MouthStyle SmallSmilyMouthClass"src="Image/Mouth/SmallSmileMouth.png" id = "SmallSmilyMouthStyle">
+                <img class = "StyleImage MouthStyle FrownMouthClass"src="Image/Mouth/FrownMouth.png" id = "FrownMouthStyle">
+                <img class = "StyleImage MouthStyle SmallFrownMouthClass"src="Image/Mouth/SmallFrownMouth.png" id = "SmallFrownMouthStyle">
+                <img class = "StyleImage MouthStyle BlankMouthClass"src="Image/Mouth/BlankMouth.png" id = "BlankMouthStyle">
+                <img class = "StyleImage MouthStyle SmallBlankMouthClass"src="Image/Mouth/SmallBlankMouth.png" id = "SmallBlankMouthStyle">
+                <img class = "StyleImage MouthStyle LargeBlankMouthClass"src="Image/Mouth/LargeBlankMouth.png" id = "LargeBlankMouthStyle">
+                <img class = "StyleImage HairStyle BlackMessyHairClass"src="Image/Hair/BlackMessyHair.png" id = "BlackMessyHairStyle">
+                <img class = "StyleImage HairStyle BrownMessyHairClass"src="Image/Hair/BrownMessyHair.png" id = "BrownMessyHairStyle">
+                <img class = "StyleImage HairStyle BlondMessyHairClass"src="Image/Hair/BlondMessyHair.png" id = "BlondMessyHairStyle">
+                <img class = "StyleImage HairStyle BlackCurlyHairClass"src="Image/Hair/BlackCurlyHair.png" id = "BlackCurlyHairStyle">
+                <img class = "StyleImage HairStyle BrownCurlyHairClass"src="Image/Hair/BrownCurlyHair.png" id = "BrownCurlyHairStyle">
+                <img class = "StyleImage HairStyle BlondCurlyHairClass"src="Image/Hair/BlondCurlyHair.png" id = "BlondCurlyHairStyle">
+                <img class = "StyleImage HairStyle BlackLongHairClass"src="Image/Hair/BlackLongHair.png" id = "BlackLongyHairStyle">
+                <img class = "StyleImage HairStyle BrownLongHairClass"src="Image/Hair/BrownLongHair.png" id = "BrownLongHairStyle">
+                <img class = "StyleImage HairStyle BlondLongHairClass"src="Image/Hair/BlondLongHair.png" id = "BlondLongHairStyle"> 
+                <img class = "StyleImage AccessoriesStyle JawlineAccessoriesClass"src="Image/Accessories/JawlineAccessories.png" id = "JawlineAccessoriesStyle"> 
+                <img class = "StyleImage HatStyle BlueWhiteHatClass"src="Image/Hat/BlueWhiteHat.png" id = "BlueWhiteHatStyle"> 
+                <img class = "StyleImage HatStyle BikeHelmetHatClass"src="Image/Hat/BikeHelmetHat.png" id = "BikeHelmetHatStyle">
+                <div id="BlankHairStyle" class="HairStyle Blank"></div>
+                <div id="BlankHatStyle" class="HatStyle Blank"></div>
+                <div id="BlankAccessoriesStyle" class="AccessoriesStyle Blank"></div>
+            </div>
+
+        </div>
+        <aside class="aside aside-1">
+            Options
+            <div class="Accessoriesbuttons">
+                <button class="buttons EyesImageButton" id="EyesImageButtonID" onclick="toggleOptions('EyesOptions')"> Eyes </button>
+                <button class="buttons MouthImageButton" onclick="toggleOptions('MouthOptions')"> Mouth </button>
+                <button class="buttons HatsImageButton" onclick="toggleOptions('HatsOptions')"> Hats </button>
+                <button class="buttons ColorImageButton" onclick="toggleOptions('ColorOptions')"> Color </button>
+                <button class="buttons BodyImageButton" onclick="toggleOptions('BodyOptions')"> Body </button>
+                <button class="buttons HairImageButton" onclick="toggleOptions('HairOptions')"> Hair </button>
+                <button class="buttons AccessoriesImageButton" onclick="toggleOptions('AccessoriesOptions')"> Accessories</button>
+                <button class="buttons BackgroundImageButton" onclick="toggleOptions('BackgroundOptions')"> Background </button>
+                
+            </div>
+        </aside>
+
+
+        <aside class="aside aside-2">
+            Style 
+            <div class="buttons EyesOptions" id="EyesOptions">
+                <button class="NeutralEyes" onclick="toggleSyle('NeutralEyesStyle', 'EyesStyle')"> Neutral </button>
+                <button class="AngryEyes" onclick="toggleSyle('AngryEyesStyle', 'EyesStyle')"> Angry </button>
+                <button class="ChillEyes" onclick="toggleSyle('ChillEyesStyle', 'EyesStyle')"> Chill </button>
+                <button class="SadEyes" onclick="toggleSyle('SadEyesStyle', 'EyesStyle')"> Sad </button>
+                <button class="starseyes" onclick="toggleSyle('StarsEyesStyle','EyesStyle')"> Stars </button>
+                <button class="GlassesOne" onclick="toggleSyle('GlassesOneEyesStyle','EyesStyle')" > Glasses one </button>
+                <button class="GlassesTwo" onclick="toggleSyle('GlassesTwoEyesStyle','EyesStyle')"> Glasses two </button>
+                <button class="GlassesThree" onclick="toggleSyle('GlassesThreeEyesStyle','EyesStyle')"> Glasses three </button>
+                <button class="GlassesThree" onclick="toggleSyle('GlassesFourEyesStyle','EyesStyle')"> Glasses Four </button>
+            </div>
+            <div class="buttons MouthOptions" id="MouthOptions">
+                <button class="NoneMouth" onclick="toggleSyle('BlankStyle','MouthStyle')"> None </button>
+                <button class="SmilyMouth" onclick="toggleSyle('SmilyMouthStyle','MouthStyle')"> Smile </button>
+                <button class="SmallSmilyMouth" onclick="toggleSyle('SmallSmilyMouthStyle','MouthStyle')"> Small Smile </button>
+                <button class="FrownMouth" onclick="toggleSyle('FrownMouthStyle','MouthStyle')">  Frown </button>
+                <button class="SmallFrownMouth" onclick="toggleSyle('SmallFrownMouthStyle','MouthStyle')"> Frown Small </button>
+                <button class="BlankMouth" onclick="toggleSyle('BlankMouthStyle','MouthStyle')"> Blank </button>
+                <button class="SmallBlankMouth" onclick="toggleSyle('SmallBlankMouthStyle','MouthStyle')"> Blank Small </button>
+                <button class="LargeBlankMouth" onclick="toggleSyle('LargeBlankMouthStyle','MouthStyle')"> Blank Large </button>
+
+            </div>
+            <div class="buttons HatsOptions" id="HatsOptions">
+                <button class="NoneHat" onclick="toggleSyle('BlankStyle','HatStyle')"> None </button>
+                <button class="CapHat" onclick="toggleSyle('BlueWhiteHatStyle','HatStyle')"> Cap </button>
+                <button class="Cowboyhat" onclick="toggleSyle('BikeHelmetHatStyle','HatStyle')"> Bike helmet</button>
+
+            </div>
+            <div class="buttons ColorOptions" id="ColorOptions">
+                <button class="Beige-light" onclick="toggleSyle('BeigeLightColorStyle','ColorStyle')">  </button>
+                <button class="Beige" onclick="toggleSyle('BeigeColorStyle','ColorStyle')">  </button>
+                <button class="Beige-Dark" onclick="toggleSyle('BeigeDarkColorStyle','ColorStyle')">  </button>
+                <button class="Brown-Light" onclick="toggleSyle('BrownLightColorStyle','ColorStyle')">  </button>
+                <button class="Brown" onclick="toggleSyle('BrownColorStyle','ColorStyle')">  </button>
+                <button class="Brown Dark" onclick="toggleSyle('BrownDarkColorStyle','ColorStyle')">  </button>
+                <button class="White" onclick="toggleSyle('WhiteColorStyle','ColorStyle')">  </button>
+                <button class="Gray-Light" onclick="toggleSyle('GrayLightColorStyle','ColorStyle')">  </button>
+                <button class="Gray-Dark" onclick="toggleSyle('GrayDarkColorStyle','ColorStyle')">  </button>
+                <button class="Black" onclick="toggleSyle('BlackColorStyle','ColorStyle')">  </button>
+                <button class="Red" onclick="toggleSyle('RedColorStyle','ColorStyle')">  </button>
+                <button class="Blue" onclick="toggleSyle('BlueColorStyle','ColorStyle')">  </button>
+                <button class="Green" onclick="toggleSyle('GreenColorStyle','ColorStyle')">  </button>
+                <button class="Yellow" onclick="toggleSyle('YellowColorStyle','ColorStyle')">  </button>
+                <button class="Gold" onclick="toggleSyle('GoldColorStyle','ColorStyle')">  </button>
+                <button class="Pink" onclick="toggleSyle('PinkColorStyle','ColorStyle')">  </button>
+            </div>
+            <div class="buttons BodyOptions" id="BodyOptions">
+                <button class="SuitBody" onclick="toggleSyle('BlankStyle', 'BodyStyle')"> None </button>
+                <button class="SuitBody" onclick="toggleSyle('SuitBodyStyle', 'BodyStyle')"> Suit </button>
+                <button class="BikeBody" onclick="toggleSyle('BikeBodyStyle', 'BodyStyle')"> Biking suit </button>
+            </div>
+            <div class="buttons HairOptions" id="HairOptions">
+                <button class="BlackMessyHair" id="BlackMessyButton" onclick="toggleSyle('BlankStyle','HairStyle')"> None </button>
+                <button class="BlackMessyHair" onclick="toggleSyle('BlackMessyHairStyle','HairStyle')"> Messy Black Hair </button>
+                <button class="BrownMessyHair" onclick="toggleSyle('BrownMessyHairStyle','HairStyle')"> Messy Brown Hair</button>
+                <button class="BlondMessyHair" onclick="toggleSyle('BlondMessyHairStyle','HairStyle')"> Messy Blond Hair </button>
+                <button class="BlackCurlyHair" onclick="toggleSyle('BlackCurlyHairStyle','HairStyle')"> Curly Black Hair </button>
+                <button class="BrownCurlyHair" onclick="toggleSyle('BrownCurlyHairStyle','HairStyle')"> Curly Brown Hair</button>
+                <button class="BlondCurlyHair" onclick="toggleSyle('BlondCurlyHairStyle','HairStyle')"> Curly Blond Hair </button>
+                <button class="BlackCurlyHair" onclick="toggleSyle('BlackLongyHairStyle','HairStyle')"> Long Black Hair </button>
+                <button class="BrownCurlyHair" onclick="toggleSyle('BrownLongHairStyle','HairStyle')"> Long Brown Hair</button>
+                <button class="BlondCurlyHair" onclick="toggleSyle('BlondLongHairStyle','HairStyle')"> Long Blond Hair </button>
+            </div>
+            <div class="buttons AccessoriesOptions" id="AccessoriesOptions">
+                <button class="JawlineAccessorie" onclick="toggleSyle('BlankStyle','AccessoriesStyle')"> None </button>
+                <button class="JawlineAccessorie" onclick="toggleSyle('JawlineAccessoriesStyle','AccessoriesStyle')"> Jawline </button>
+
+            </div>
+            <div class="buttons BackgroundOptions" id="BackgroundOptions">
+                <button class="GreenEyes" onclick="toggleSyle('LightGrayBackgroundStyle','BackgroundStyle')" > LightGray </button>
+                <button class="BlueEyes" onclick="toggleSyle('BlueBackgroundStyle','BackgroundStyle')"> Blue </button>
+            </div>
+
+        </aside> 
+        <footer class="footer">
+            <button id="DownloadImageButton" class="buttons DownloadImageButton" onclick="downloadImages()"> 📩Download📩 </button>
+            <button class="buttons RandomImageButton" onclick="randomizeStyles()"> 🎲Random🎲 </button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

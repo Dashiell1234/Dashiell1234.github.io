@@ -1,0 +1,366 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('Image/Background_wite_blue.jpg');
+  transition: 0.3s;
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #b5f4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.wrapper {
+  width: 75vw;
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper>* {
+  padding: 10px;
+  flex: 1 100%;
+}
+.wrapper {
+  box-shadow: 5px 5px 20px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 25px; 
+}
+
+.header {
+  font-size: xx-large;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: white;
+}
+
+.footer {
+  text-align: left;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: white;
+}
+
+.main {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-color: white;
+}
+
+.images {
+  background-color: white;
+  height: 50vh;
+  width: 370px;
+  position:relative; 
+  align-content: stretch;
+}
+.Blank{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.BackgroundStyle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none; 
+}
+
+.LightGrayBackgroundClass {
+  display: block;
+}
+
+.ColorStyle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+
+.EyesStyles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+}
+
+.BodyStyle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: none;
+}
+
+.MouthStyle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+}
+
+.HairStyle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  display: none;
+}
+
+.AccessoriesStyle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  display: none;
+}
+
+.HatStyle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  display: none;
+}
+
+.NeutralEyesClass{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: block;
+}
+
+.GrayLightColorClass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+}
+
+.SmilyMouthClass{
+  display: block;
+}
+
+.images img {
+  max-height: 100%;
+  padding: 1%;
+}
+
+.aside-1 {
+  font-size: large;
+  
+  background: white;
+}
+
+.aside-2 {
+  font-size: large;
+  
+  background: white;
+}
+
+.EyesOptions {
+  display: block;
+}
+
+.Accessoriesbuttons button,
+.aside-2 button {
+  padding: 3%;
+  border: 0;
+  margin-bottom: 5px;
+  font-size: 1em;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  background: #ECECEC;
+}
+
+.ColorOptions button{
+  padding: 5%;
+}
+
+.ColorOptions
+.Beige-light{
+  background: #Fac7af
+}
+
+.ColorOptions
+.Beige{
+  background: #FAB788;
+}
+
+.ColorOptions
+.Beige-Dark{
+  background: #Db9461;
+}
+
+
+.ColorOptions
+.Brown-Light{
+  background: #b27549;
+}
+
+.ColorOptions
+.Brown{
+  background: #6a4227;
+}
+
+.ColorOptions
+.Brown-Dark{
+  background: #53301b;
+}
+
+.ColorOptions
+.White{
+  background: #f7f7f7;
+}
+
+.ColorOptions
+.Gray-Light{
+  background: #CACACA;
+}
+
+.ColorOptions
+.Gray-Dark{
+  background: #363636;
+}
+
+.ColorOptions
+.Black{
+  background: #040404;
+}
+
+.ColorOptions
+.Red{
+  background: #D30000;
+}
+
+.ColorOptions
+.Blue{
+  background: #0080fe;
+}
+
+.ColorOptions
+.Green{
+  background: #4cbb73;
+}
+
+.ColorOptions
+.Yellow{
+  background: #Fee12b;
+}
+
+.ColorOptions
+.Gold{
+  background: #f9a602;
+}
+
+.ColorOptions
+.Pink{
+  background: #ff6fff;
+}
+
+.Accessoriesbuttons button:hover,
+.aside-2 button:hover,
+.RandomImageButton:hover,
+.DownloadImageButton:hover {
+  transform: scale(1.10); 
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Accessoriesbuttons button:active,
+.aside-2 button:active,
+.RandomImageButton:active,
+.DownloadImageButton:active {
+  transform: scale(0.99); 
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.RandomImageButton,
+.DownloadImageButton {
+  padding: 1%;
+  border: 0;
+  font-size: 1em;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;  
+  background: #ECECEC;
+  font-size: large;
+}
+
+.DownloadImageButton{
+  margin-right: 25px;
+}
+.MouthOptions,
+.HatsOptions,
+.ColorOptions,
+.BodyOptions,
+.HairOptions,
+.AccessoriesOptions,
+.BackgroundOptions {
+  display: none;
+}
+
+
+
+@media all and (min-width: 990px) {
+
+  .aside {flex: 1 0 0;}
+
+   }
+
+@media all and (max-width: 990px) {
+  .footer {
+    text-align: center;
+    
+  }
+  .main {
+    flex: 3 0px;
+  }
+  .images{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+@media all and (max-width: 600px) {
+  .StyleImage{
+    width: 100%;
+  }
+  .images{
+    width: 90%;
+  }
+}
+  
+
+
+
+@media all and (min-width: 1000px) {
+  .main {flex: 3 0px;}
+  .main {order: 1;}
+  .aside-1 {order: 2;}
+  .aside-1 {flex: 2 100px;}
+  .aside-2 {order: 3;}
+  .aside-2 {flex: 3 10px;}
+  .footer {order: 4;}
+
+}
