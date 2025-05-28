@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <style>
+
+     @font-face {
+      font-family: TitleFont;
+      src: url("fonts/Inter_28pt-Bold.ttf");
+    }
+
+    @font-face {
+      font-family: Font;
+      src: url("fonts/Rubik-Regular.ttf");
+    }
+
+    body {
+      margin: 0;
+      font-family: TitleFont;
+      background-color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .top-box {
+      width: 100%;
+      height: 60px;
+      background-color: #287094;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      color: white;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 200;
+    }
+
+    .box-text {
+      font-size: 24px;
+    }
+
+    .container {
+      padding: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      column-gap: 10%;
+      justify-content: center; 
+      align-items: center;   
+    }
+
+    .content {
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ffffff;
+    }
+
+    .siteimage {
+      width: 1024px;
+      height: 500px;
+      border: 2px solid #D4D4CE;
+      border-radius: 4px;
+    }
+
+    .caption {
+      margin-top: 10px;
+      text-align: left;
+      width: 1024px;
+      font-size: 30px;
+    }
+
+    .Counter{
+      font-family: Font;
+      margin-top: 10px;
+      text-align: left;
+      width: 1024px;
+      font-size: 20px;
+    }
+
+
+    .siteimage{
+      border: 2px solid #D4D4CE;
+    }
+
+    .Namebox{
+      font-family: Font;
+      background-color: #D4D4CE;
+      border: none;
+      border-radius: 4px;
+      width: 1024px;
+      height: 40px;
+      padding-left: 10px;
+      font-size: 20px;
+    }
+
+    .Messagebox{
+      font-family: Font;
+      vertical-align: top;
+      padding-top: 10px;
+      background-color: #D4D4CE;
+      border: none;
+      border-radius: 4px;
+      width: 1024px;
+      height: 200px;
+      padding-left: 10px;
+      font-size: 20px;
+    }
+
+    .Namebox:focus,
+    .Messagebox{
+      outline: none;
+      border: none;
+      resize: none;
+    }
+
+    .SendButton {
+      width: 150px;
+      height: 40px;
+      font-size: 18px;
+      background-color: #09c522;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 0;
+    }
+
+
+  </style>
+</head>
+<body>
+   <div class="top-box">
+    <span class="box-text">Reviewy</span>
+  </div>
+   <div class="container">
+    <div class="content">
+      <img class="siteimage" src="./images/IndexIcons/Reviewy.png" alt="Reviewy Icon" />
+      <div class="caption">Profile Picture Generator</div>
+      <div class="Counter">Reviews: 0</div>
+    </div class="input-container">
+      <input class="Namebox" placeholder="Name"></input>
+      <textarea  class="Messagebox" placeholder="Message..."></textarea>
+      <button class="SendButton">Send</button>
+    </div>
+
+    
+  </div>
+
+</body>
+</html>
