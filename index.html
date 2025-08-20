@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reviewy</title>
+  <script src="index.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <style>
+    @font-face {
+      font-family: TitleFont;
+      src: url("fonts/Inter_28pt-Bold.ttf");
+    }
+
+    body {
+      margin: 0;
+      font-family: TitleFont;
+      background-color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .top-box {
+      width: 100%;
+      background-color: #287094;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      color: white;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 200;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .box-text {
+      font-size: 24px;
+    }
+
+    .container {
+      padding: 1%;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 80px;
+      column-gap: 0; 
+    }
+
+    .ChatBox {
+      width: 320px;
+      height: 350px;
+      background-color: white;
+      padding: 3.5%;
+      color: black;
+    }
+
+    
+    .IconsImage {
+      border: 2px solid #D4D4CE;
+      border-radius: 1%;
+    }
+
+    .boton-elegante {
+      padding: 15px 30px;
+      background-color: #ffffff;
+      border: #ffffff;
+      color: #023246;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      font-weight: bold;
+    }
+
+    .boton-elegante:hover {
+      text-decoration: underline;
+    }
+
+    .box-text-message {
+      bottom: 1px;
+      font-size: 12px;
+      vertical-align: middle;
+      padding-top: 10px;
+      padding-left: 2px;
+    }
+
+  @media (max-width: 850px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .ChatBox {
+      width: 400px; 
+      height: auto;
+    }
+
+    .boton-elegante {
+      width: 100%;
+      font-size: 2rem; 
+      padding: 12px 0;
+    }
+  }
+    
+  </style>
+</head>
+
+<body>
+  <div class="top-box">
+    <span class="box-text">Reviewy</span>
+    <span class="box-text-message">A space where your feedback fuels startup innovation</span>
+  </div>
+
+  <div class="container">
+    <div class="ChatBox">
+      <img class="IconsImage" src="./images/IndexIcons/Reviewy.png" alt="Reviewy Icon" style="width: 100%; height: auto;" />
+      <button class="boton-elegante" onclick="window.location.href='coment1.html'">Profile Picture Generator</button>
+    </div>
+    <div class="ChatBox">
+      <img class="IconsImage" src="./images/IndexIcons/passimg2.png" alt="Reviewy Icon" style="width: 100%; height: auto;" />
+      <button class="boton-elegante" onclick="window.location.href='coment2.html'">Password Cracker Game</button>
+    </div>
+    <div class="ChatBox">
+      <img class="IconsImage" src="./images/IndexIcons/FountImage.png" alt="Reviewy Icon" style="width: 100%; height: auto;" />
+      <button class="boton-elegante" onclick="window.location.href='coment3.html'">Review (Feedback Site)</button>
+    </div>
+    <div class="ChatBox">Chat box 4 content here</div>
+  </div>
+
+  <script>
+    function updateBorders() {
+      const boxes = document.querySelectorAll(".ChatBox");
+      
+      // Reset
+      boxes.forEach(box => {
+        box.style.borderLeft = "none";
+        box.style.marginLeft = "10px";
+      });
+
+      for (let i = 1; i < boxes.length; i++) {
+        const prevBox = boxes[i - 1];
+        const currBox = boxes[i];
+        
+        // If on the same row
+        if (Math.abs(prevBox.getBoundingClientRect().top - currBox.getBoundingClientRect().top) < 5) {
+          currBox.style.borderLeft = "2px solid darkgray";
+          currBox.style.marginLeft = "1%";
+        }
+      }
+    }
+
+    window.addEventListener("load", updateBorders);
+    window.addEventListener("resize", updateBorders);
+
+  </script>
+</body>
+</html>
